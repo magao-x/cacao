@@ -262,17 +262,12 @@ message("CMAKE_EXE_LINKER_FLAGS  :  ${CMAKE_EXE_LINKER_FLAGS}")
 message("====================================================")
 
 
-install(TARGETS cacao DESTINATION bin PERMISSIONS SETUID)
+set(PROGRAM_PERMISSIONS_DEFAULT
+    OWNER_WRITE OWNER_READ OWNER_EXECUTE
+    GROUP_READ GROUP_EXECUTE
+    WORLD_READ WORLD_EXECUTE)
 
-
-
-
-
-
-
-
-
-
-
-
+install(TARGETS cacao DESTINATION bin PERMISSIONS ${PROGRAM_PERMISSIONS_DEFAULT} SETUID)
+# Note: may need to write "/usr/local/magma/lib" to:
+# /etc/ld.so.conf.d/magma.conf
 
