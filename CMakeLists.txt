@@ -262,7 +262,7 @@ message("CMAKE_EXE_LINKER_FLAGS  :  ${CMAKE_EXE_LINKER_FLAGS}")
 message("====================================================")
 
 
-install(TARGETS cacao DESTINATION bin)
+install(TARGETS cacao DESTINATION bin PERMISSIONS SETUID)
 
 
 
