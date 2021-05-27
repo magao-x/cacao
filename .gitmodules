@@ -72,7 +72,7 @@
     branch = dev
 [submodule "src/AOloopControl"]
 	path = src/AOloopControl
-	url = https://github.com/CACAO-org/AOloopControl
+	url = https://github.com/magao-x/AOloopControl
     branch = dev
 [submodule "src/AOloopControl_acquireCalib"]
 	path = src/AOloopControl_acquireCalib
